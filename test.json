@@ -1,1 +1,7 @@
-{"vminmax":{"vmin":0,"vmax":1.47},"cbar":"rain"}
+{
+  "vminmax": {
+    "vmin": 0,
+    "vmax": 1.65
+  },
+  "cbar": "temperature"
+}
