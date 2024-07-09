@@ -1,0 +1,8 @@
+{
+  "id": "foo",
+  "vminmax": {
+    "vmin": 0,
+    "vmax": 2.98
+  },
+  "cbar": "rain"
+}
