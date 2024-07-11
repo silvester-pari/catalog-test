@@ -12,7 +12,7 @@
       },
       {
         "rel": "preview",
-        "href": "https://app-reverse-proxy.osc.earthcode.eox.at/open-science-catalog-metadata/themes/solid-earth/EO_Solid_Earth.webp",
+        "href": "./EO_Solid_Earth.webp",
         "type": "image/webp",
         "title": "Image",
         "proj:epsg": null,
