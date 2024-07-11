@@ -1,11 +1,6 @@
 {
     "files": [
-      "../../../eo-missions",
-      "../../../processes",
-      "../../../products",
       "../../../projects",
-      "../../../themes",
-      "../../../variables",
       "../../../catalog.json"
     ],
     "lint": false,
