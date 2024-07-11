@@ -1,0 +1,27 @@
+{
+    "type": "Catalog",
+    "id": "themes",
+    "stac_version": "1.0.0",
+    "description": "Earth Science topics linked to the grand science challenges set in the ESA strategy",
+    "links": [
+      {
+        "rel": "root",
+        "href": "../catalog.json",
+        "type": "application/json",
+        "title": "Open Science Catalog"
+      },
+      {
+        "rel": "child",
+        "href": "./solid-earth/catalog.json",
+        "type": "application/json",
+        "title": "Solid Earth"
+      },
+      {
+        "rel": "parent",
+        "href": "../catalog.json",
+        "type": "application/json",
+        "title": "Open Science Catalog"
+      }
+    ],
+    "title": "Themes"
+  }

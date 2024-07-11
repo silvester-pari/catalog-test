@@ -1,6 +1,7 @@
 {
     "files": [
       "../../../projects",
+      "../../../themes",
       "../../../catalog.json"
     ],
     "lint": false,
