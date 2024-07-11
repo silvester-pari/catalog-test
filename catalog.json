@@ -21,6 +21,30 @@
       "href": "./themes/catalog.json",
       "type": "application/json",
       "title": "Themes"
+    },
+    {
+      "rel": "child",
+      "href": "./variables/catalog.json",
+      "type": "application/json",
+      "title": "Variables"
+    },
+    {
+      "rel": "child",
+      "href": "./processes/catalog.json",
+      "type": "application/json",
+      "title": "Processes"
+    },
+    {
+      "rel": "child",
+      "href": "./eo-missions/catalog.json",
+      "type": "application/json",
+      "title": "EO Missions"
+    },
+    {
+      "rel": "child",
+      "href": "./products/catalog.json",
+      "type": "application/json",
+      "title": "Products"
     }
   ],
   "title": "Open Science Catalog"
