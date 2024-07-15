@@ -1,0 +1,8 @@
+{
+  "id": "foo",
+  "title": "Foo",
+  "description": "Hello Foo!",
+  "keywords": [
+    "abc"
+  ]
+}
