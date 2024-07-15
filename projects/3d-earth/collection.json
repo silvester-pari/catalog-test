@@ -1,6 +1,9 @@
 {
   "id": "3d-earth",
   "title": "3d Earth",
-  "description": "Description",
-  "keywords": []
+  "description": "Test Description",
+  "keywords": [
+    "foo",
+    "bar"
+  ]
 }
