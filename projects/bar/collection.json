@@ -1,0 +1,8 @@
+{
+  "id": "bar",
+  "title": "Bar Test",
+  "description": "Hello!",
+  "keywords": [
+    "foo"
+  ]
+}
