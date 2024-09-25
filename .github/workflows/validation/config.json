@@ -1,9 +1,0 @@
-{
-    "files": [
-      "../../../projects",
-      "../../../themes",
-      "../../../catalog.json"
-    ],
-    "lint": false,
-    "custom": "./validate.js"
-  }
