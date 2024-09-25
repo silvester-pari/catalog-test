@@ -19,9 +19,10 @@ jobs:
         uses: actions/checkout@v3
       - name: Prepare
         run: |
-          cd .github/workflows/validation
+          git clone git@github.com:ESA-EarthCODE/open-science-catalog-validation.git
+          cd .open-science-catalog-validation/validation
           npm ci
       - name: Validate
         run: |
-          cd .github/workflows/validation
+          cd .open-science-catalog-validation/validation
           npm test
