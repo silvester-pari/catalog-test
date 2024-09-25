@@ -19,8 +19,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Prepare
         run: |
-          git clone git@github.com:ESA-EarthCODE/open-science-catalog-validation.git
-          cd .open-science-catalog-validation/validation
+          npm install https://github.com/ESA-EarthCODE/open-science-catalog-validation#root-level-package
+          ls
           npm ci
       - name: Validate
         run: |
