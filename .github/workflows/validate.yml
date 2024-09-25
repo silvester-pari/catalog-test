@@ -20,9 +20,7 @@ jobs:
       - name: Prepare
         run: |
           npm install https://github.com/ESA-EarthCODE/open-science-catalog-validation#root-level-package
-          ls
-          npm ci
       - name: Validate
         run: |
-          cd .open-science-catalog-validation/validation
+          cd node_modules/open-science-catalog-validation
           npm test
