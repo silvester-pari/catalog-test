@@ -21,17 +21,33 @@
       "title": "EO4Society Link"
     },
     {
+      "rel": "child",
+      "href": "../../products/crust-and-upper-mantle-model-3d-earth/collection.json",
+      "type": "application/json",
+      "title": "Global Model of Crust and Upper Mantle_WINTERC-G_GOCE"
+    },
+    {
+      "rel": "child",
+      "href": "../../products/geothermal-heat-flow-greenland-3d-earth/collection.json",
+      "type": "application/json",
+      "title": "Geothermal Heat Flow Database and Map_Greenland_GOCE_SWARM"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
       "title": "Projects"
+    },
+    {
+      "rel": "self",
+      "href": "https://esa-earthcode.github.io/open-science-catalog-metadata/projects/3d-earth/collection.json",
+      "type": "application/json"
     }
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/osc/v1.0.0-rc.3/schema.json",
     "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
   ],
-  "title": "3D-EARTH",
   "osc:name": "3D-Earth",
   "osc:status": "completed",
   "osc:themes": [
@@ -41,44 +57,63 @@
   "contacts": [
     {
       "name": "Roger Haagmans",
-      "role": "technical_officer",
       "emails": [
         {
           "value": "roger.haagmans@esa.int"
         }
+      ],
+      "roles": [
+        "technical_officer"
       ]
     },
     {
       "name": "UNIVERSITY OF KIEL (DE)",
-      "role": "consortium_member"
+      "roles": [
+        "consortium_member"
+      ]
     },
     {
       "name": "BRITISH ANTARCTIC SURVEY (GB)",
-      "role": "consortium_member"
+      "roles": [
+        "consortium_member"
+      ]
     },
     {
       "name": "DUBLIN INSTITUTE FOR ADVANCED STUDIES (DIAS) (IE)",
-      "role": "consortium_member"
+      "roles": [
+        "consortium_member"
+      ]
     },
     {
       "name": "GEOLOGICAL SURVEY OF DENMARK AND GREENLAND (DK)",
-      "role": "consortium_member"
+      "roles": [
+        "consortium_member"
+      ]
     },
     {
       "name": "TU DELFT (NL)",
-      "role": "consortium_member"
+      "roles": [
+        "consortium_member"
+      ]
     },
     {
       "name": "Technical University of Denmark (DK)",
-      "role": "consortium_member"
+      "roles": [
+        "consortium_member"
+      ]
     },
     {
       "name": "UNIVERSITY OF OSLO (NO)",
-      "role": "consortium_member"
+      "roles": [
+        "consortium_member"
+      ]
     }
   ],
   "start_datetime": "2019-10-22T00:00:00Z",
   "end_datetime": "2020-12-11T23:59:59Z",
+  "osc:missions": [],
+  "updated": "2024-09-12T20:32:23.030110Z",
+  "title": "3D-EARTH",
   "extent": {
     "spatial": {
       "bbox": [
@@ -99,5 +134,6 @@
       ]
     }
   },
-  "license": "proprietary"
+  "license": "proprietary",
+  "keywords": []
 }
