@@ -22,4 +22,4 @@ jobs:
           npm install https://github.com/ESA-EarthCODE/open-science-catalog-validation#3dcd1537a1adcc41380e92c084cc05985268ddd5
       - name: Validate
         run: |
-          open-science-catalog-validation ./{eo-missions,products,projects,themes,variables}
+          npx open-science-catalog-validation ./{eo-missions,products,projects,themes,variables}
