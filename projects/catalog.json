@@ -17,6 +17,12 @@
       "title": "3D-EARTH"
     },
     {
+      "rel": "child",
+      "href": "./promcom-production-of-lower-tropospheric-methane-and-carbon-monoxide-distributions-through-combined-use-of-esa-sentinel-5-precursor-shortwave-infrared-and-iasi-cris-thermal-infrared-satellite-data/collection.json",
+      "type": "application/json",
+      "title": "PROMCOM"
+    },
+    {
       "rel": "parent",
       "href": "../catalog.json",
       "type": "application/json",
