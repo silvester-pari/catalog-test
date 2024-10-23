@@ -1,0 +1,21 @@
+{
+    "type": "Catalog",
+    "id": "variables",
+    "stac_version": "1.0.0",
+    "description": "Geoscience, climate and environmental variables",
+    "links": [
+      {
+        "rel": "root",
+        "href": "../catalog.json",
+        "type": "application/json",
+        "title": "Open Science Catalog"
+      },
+      {
+        "rel": "parent",
+        "href": "../catalog.json",
+        "type": "application/json",
+        "title": "Open Science Catalog"
+      }
+    ],
+    "title": "Variables"
+  }
