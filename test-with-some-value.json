@@ -34,7 +34,7 @@
           "enum": ["Catalog"],
           "options": { "hidden": true }
         },
-        "title": { "title": "Title", "type": "string", "minLength": 1, "value": "testtt" },
+        "title": { "title": "Title", "type": "string", "minLength": 1, "default": "testtt" },
         "description": {
           "title": "Description",
           "type": "string",
