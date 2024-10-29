@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Prepare
         run: |
-          npm install ESA-EarthCODE/open-science-catalog-validation#v1.0.0-rc.1
+          npm install ESA-EarthCODE/open-science-catalog-validation#382ac45aa0fe6d94eab718534cf16dd9501f1f75
       - name: Validate
         run: |
           npx open-science-catalog-validation ./eo-missions ./products ./projects ./themes ./variables
