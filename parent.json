@@ -64,6 +64,14 @@
           "minLength": 1,
           "format": "markdown"
         },
+        "num": {
+          "title": "Num",
+          "type": "number"
+        },
+        "inte": {
+          "title": "Inte",
+          "type": "integer"
+        },
         "links": {
           "title": "Links",
           "type": "array",
