@@ -64,7 +64,7 @@
           "type": "string",
           "minLength": 1,
           "format": "markdown",
-          "default": "## 1234"
+          "default": "## 1234 Yo Yo"
         },
         "num": {
           "title": "Num",
