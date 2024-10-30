@@ -57,7 +57,7 @@
           "title": "Title",
           "type": "string",
           "minLength": 1,
-          "default": "Hello world Yo Yo 123szcsdssd"
+          "default": "Hello"
         },
         "description": {
           "title": "Description",
