@@ -1033,6 +1033,9 @@
             }
           }
         }
+      },
+      "options": {
+        "grid_columns": 2
       }
     },
     {
