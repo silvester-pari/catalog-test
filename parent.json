@@ -57,7 +57,7 @@
           "title": "Title",
           "type": "string",
           "minLength": 1,
-          "default": "Test 123 Hellow"
+          "default": "Hello world"
         },
         "description": {
           "title": "Description",
