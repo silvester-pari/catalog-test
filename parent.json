@@ -57,7 +57,7 @@
           "title": "Title",
           "type": "string",
           "minLength": 1,
-          "default": "Title 1234"
+          "default": "Hello World"
         },
         "description": {
           "title": "Description",
