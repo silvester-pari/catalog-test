@@ -57,7 +57,7 @@
           "title": "Title",
           "type": "string",
           "minLength": 1,
-          "default": "Hello World"
+          "default": "Hello Worldasaas"
         },
         "description": {
           "title": "Description",
