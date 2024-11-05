@@ -33,7 +33,8 @@
             "format": "url"
           },
           "startval": [],
-          "initialValue": []
+          "initialValue": [],
+          "default": []
         },
         "id": {
           "type": "string",
@@ -55,7 +56,8 @@
           "type": "string",
           "minLength": 1,
           "startval": "dcdcdcdcdc",
-          "initialValue": "sdfdseffssfdds"
+          "initialValue": "sdfdseffssfdds",
+          "default": ""
         },
         "description": {
           "title": "Description",
@@ -63,7 +65,8 @@
           "minLength": 1,
           "format": "markdown",
           "startval": "",
-          "initialValue": ""
+          "initialValue": "",
+          "default": ""
         },
         "keywords": {
           "title": "Keywords",
@@ -74,7 +77,8 @@
           },
           "uniqueItems": true,
           "startval": [],
-          "initialValue": []
+          "initialValue": [],
+          "default": []
         },
         "license": {
           "title": "License",
@@ -651,7 +655,8 @@
             "ZPL-2.1"
           ],
           "startval": "various",
-          "initialValue": "various"
+          "initialValue": "various",
+          "default": "various"
         },
         "extent": {
           "title": "Extents",
@@ -696,6 +701,14 @@
                       "",
                       ""
                     ]
+                  ],
+                  "default": [
+                    [
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
                   ]
                 }
               }
@@ -728,6 +741,12 @@
                     ]
                   ],
                   "initialValue": [
+                    [
+                      "",
+                      ""
+                    ]
+                  ],
+                  "default": [
                     [
                       "",
                       ""
@@ -800,7 +819,15 @@
             }
           },
           "startval": [],
-          "initialValue": []
+          "initialValue": [],
+          "default": [
+            {
+              "href": "",
+              "title": "",
+              "type": "",
+              "rel": ""
+            }
+          ]
         }
       },
       "definitions": {
@@ -932,7 +959,8 @@
           "type": "string",
           "format": "date-time",
           "startval": "",
-          "initialValue": ""
+          "initialValue": "",
+          "default": ""
         },
         "osc:type": {
           "type": "string",
@@ -948,7 +976,8 @@
           "type": "string",
           "minLength": 1,
           "startval": "",
-          "initialValue": ""
+          "initialValue": "",
+          "default": ""
         },
         "osc:status": {
           "title": "Status",
@@ -959,7 +988,8 @@
             "completed"
           ],
           "startval": "planned",
-          "initialValue": "planned"
+          "initialValue": "planned",
+          "default": "planned"
         },
         "osc:project": {
           "title": "Project",
@@ -967,14 +997,16 @@
           "format": "osc-project",
           "minLength": 1,
           "startval": "",
-          "initialValue": ""
+          "initialValue": "",
+          "default": ""
         },
         "osc:region": {
           "title": "Region",
           "type": "string",
           "minLength": 1,
           "startval": "",
-          "initialValue": ""
+          "initialValue": "",
+          "default": ""
         },
         "osc:missions": {
           "title": "EO Missions",
@@ -986,7 +1018,8 @@
             "minLength": 1
           },
           "startval": [],
-          "initialValue": []
+          "initialValue": [],
+          "default": []
         },
         "osc:themes": {
           "title": "Themes",
@@ -1006,7 +1039,8 @@
             ]
           },
           "startval": [],
-          "initialValue": []
+          "initialValue": [],
+          "default": []
         },
         "osc:variables": {
           "title": "Variables",
@@ -1018,7 +1052,8 @@
             "minLength": 1
           },
           "startval": [],
-          "initialValue": []
+          "initialValue": [],
+          "default": []
         },
         "cf:parameter": {
           "type": "array",
@@ -1049,6 +1084,12 @@
             }
           ],
           "initialValue": [
+            {
+              "name": "",
+              "unit": ""
+            }
+          ],
+          "default": [
             {
               "name": "",
               "unit": ""
@@ -1162,7 +1203,15 @@
             }
           },
           "startval": [],
-          "initialValue": []
+          "initialValue": [],
+          "default": [
+            {
+              "href": "",
+              "title": "",
+              "type": "",
+              "rel": ""
+            }
+          ]
         }
       },
       "additionalProperties": true
