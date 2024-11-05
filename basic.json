@@ -17,11 +17,19 @@
           "format": "range"
         }
       },
-      "format": "minmax"
+      "format": "minmax",
+      "initialValue": {
+        "vmin": 0,
+        "vmax": 7.72
+      }
     },
     "cbar": {
       "type": "string",
-      "enum": ["rain", "temperature"]
+      "enum": [
+        "rain",
+        "temperature"
+      ],
+      "initialValue": "rain"
     }
   }
 }
