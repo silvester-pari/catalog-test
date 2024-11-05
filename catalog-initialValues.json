@@ -32,7 +32,8 @@
             "type": "string",
             "format": "url"
           },
-          "startval": []
+          "startval": [],
+          "initialValue": []
         },
         "id": {
           "type": "string",
@@ -53,14 +54,16 @@
           "title": "Title",
           "type": "string",
           "minLength": 1,
-          "startval": "dcdcdcdcdc"
+          "startval": "dcdcdcdcdc",
+          "initialValue": "sdfdseffssfdds"
         },
         "description": {
           "title": "Description",
           "type": "string",
           "minLength": 1,
           "format": "markdown",
-          "startval": ""
+          "startval": "",
+          "initialValue": ""
         },
         "keywords": {
           "title": "Keywords",
@@ -70,7 +73,8 @@
             "minLength": 1
           },
           "uniqueItems": true,
-          "startval": []
+          "startval": [],
+          "initialValue": []
         },
         "license": {
           "title": "License",
@@ -646,7 +650,8 @@
             "ZPL-2.0",
             "ZPL-2.1"
           ],
-          "startval": "various"
+          "startval": "various",
+          "initialValue": "various"
         },
         "extent": {
           "title": "Extents",
@@ -683,6 +688,14 @@
                       "",
                       ""
                     ]
+                  ],
+                  "initialValue": [
+                    [
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
                   ]
                 }
               }
@@ -709,6 +722,12 @@
                   },
                   "minItems": 1,
                   "startval": [
+                    [
+                      "",
+                      ""
+                    ]
+                  ],
+                  "initialValue": [
                     [
                       "",
                       ""
@@ -780,7 +799,8 @@
               }
             }
           },
-          "startval": []
+          "startval": [],
+          "initialValue": []
         }
       },
       "definitions": {
@@ -911,7 +931,8 @@
           "title": "Creation Date and Time:",
           "type": "string",
           "format": "date-time",
-          "startval": ""
+          "startval": "",
+          "initialValue": ""
         },
         "osc:type": {
           "type": "string",
@@ -926,7 +947,8 @@
           "title": "Name",
           "type": "string",
           "minLength": 1,
-          "startval": ""
+          "startval": "",
+          "initialValue": ""
         },
         "osc:status": {
           "title": "Status",
@@ -936,20 +958,23 @@
             "ongoing",
             "completed"
           ],
-          "startval": "planned"
+          "startval": "planned",
+          "initialValue": "planned"
         },
         "osc:project": {
           "title": "Project",
           "type": "string",
           "format": "osc-project",
           "minLength": 1,
-          "startval": ""
+          "startval": "",
+          "initialValue": ""
         },
         "osc:region": {
           "title": "Region",
           "type": "string",
           "minLength": 1,
-          "startval": ""
+          "startval": "",
+          "initialValue": ""
         },
         "osc:missions": {
           "title": "EO Missions",
@@ -960,7 +985,8 @@
             "type": "string",
             "minLength": 1
           },
-          "startval": []
+          "startval": [],
+          "initialValue": []
         },
         "osc:themes": {
           "title": "Themes",
@@ -979,7 +1005,8 @@
               "solid-earth"
             ]
           },
-          "startval": []
+          "startval": [],
+          "initialValue": []
         },
         "osc:variables": {
           "title": "Variables",
@@ -990,7 +1017,8 @@
             "type": "string",
             "minLength": 1
           },
-          "startval": []
+          "startval": [],
+          "initialValue": []
         },
         "cf:parameter": {
           "type": "array",
@@ -1015,6 +1043,12 @@
             }
           },
           "startval": [
+            {
+              "name": "",
+              "unit": ""
+            }
+          ],
+          "initialValue": [
             {
               "name": "",
               "unit": ""
@@ -1127,7 +1161,8 @@
               }
             }
           },
-          "startval": []
+          "startval": [],
+          "initialValue": []
         }
       },
       "additionalProperties": true
