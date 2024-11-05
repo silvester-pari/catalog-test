@@ -16,33 +16,61 @@
       "properties": {
         "stac_version": {
           "type": "string",
-          "enum": ["1.0.0", "1.1.0"],
-          "options": { "hidden": true }
+          "enum": [
+            "1.0.0",
+            "1.1.0"
+          ],
+          "options": {
+            "hidden": true
+          }
         },
         "stac_extensions": {
           "title": "Implemented STAC Extensions",
           "type": "array",
           "format": "stac-extensions",
-          "items": { "type": "string", "format": "url" }
+          "items": {
+            "type": "string",
+            "format": "url"
+          },
+          "startval": []
         },
-        "id": { "type": "string", "options": { "hidden": true } },
+        "id": {
+          "type": "string",
+          "options": {
+            "hidden": true
+          }
+        },
         "type": {
           "type": "string",
-          "enum": ["Collection"],
-          "options": { "hidden": true }
+          "enum": [
+            "Collection"
+          ],
+          "options": {
+            "hidden": true
+          }
         },
-        "title": { "title": "Title", "type": "string", "minLength": 1 },
+        "title": {
+          "title": "Title",
+          "type": "string",
+          "minLength": 1,
+          "startval": "dcdcdcdcdc"
+        },
         "description": {
           "title": "Description",
           "type": "string",
           "minLength": 1,
-          "format": "markdown"
+          "format": "markdown",
+          "startval": ""
         },
         "keywords": {
           "title": "Keywords",
           "type": "array",
-          "items": { "type": "string", "minLength": 1 },
-          "uniqueItems": true
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "startval": []
         },
         "license": {
           "title": "License",
@@ -617,29 +645,45 @@
             "ZPL-1.1",
             "ZPL-2.0",
             "ZPL-2.1"
-          ]
+          ],
+          "startval": "various"
         },
         "extent": {
           "title": "Extents",
           "type": "object",
-          "required": ["spatial", "temporal"],
+          "required": [
+            "spatial",
+            "temporal"
+          ],
           "properties": {
             "spatial": {
               "title": "Spatial Extents",
               "type": "object",
               "format": "bounding-boxes",
-              "required": ["bbox"],
+              "required": [
+                "bbox"
+              ],
               "properties": {
                 "bbox": {
                   "type": "array",
                   "items": {
                     "type": "array",
                     "format": "bounding-box",
-                    "items": { "type": "number" },
+                    "items": {
+                      "type": "number"
+                    },
                     "minItems": 4,
                     "maxItems": 4
                   },
-                  "minItems": 1
+                  "minItems": 1,
+                  "startval": [
+                    [
+                      "",
+                      "",
+                      "",
+                      ""
+                    ]
+                  ]
                 }
               }
             },
@@ -647,18 +691,29 @@
               "title": "Temporal Extents",
               "type": "object",
               "format": "temporal-intervals",
-              "required": ["interval"],
+              "required": [
+                "interval"
+              ],
               "properties": {
                 "interval": {
                   "type": "array",
                   "items": {
                     "type": "array",
                     "format": "temporal-interval",
-                    "items": { "type": "string", "format": "date-time" },
+                    "items": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
                     "minItems": 2,
                     "maxItems": 2
                   },
-                  "minItems": 1
+                  "minItems": 1,
+                  "startval": [
+                    [
+                      "",
+                      ""
+                    ]
+                  ]
                 }
               }
             }
@@ -667,17 +722,23 @@
         "providers": {
           "$comment": "Currently unusued by OSC catalog",
           "type": "array",
-          "options": { "hidden": true }
+          "options": {
+            "hidden": true
+          }
         },
         "summaries": {
           "$comment": "Currently unusued by OSC catalog",
           "type": "array",
-          "options": { "hidden": true }
+          "options": {
+            "hidden": true
+          }
         },
         "assets": {
           "$comment": "Currently unusued by OSC catalog",
           "type": "object",
-          "options": { "hidden": true }
+          "options": {
+            "hidden": true
+          }
         },
         "links": {
           "title": "Links",
@@ -689,7 +750,12 @@
           },
           "items": {
             "type": "object",
-            "required": ["href", "title", "type", "rel"],
+            "required": [
+              "href",
+              "title",
+              "type",
+              "rel"
+            ],
             "properties": {
               "href": {
                 "title": "Address",
@@ -698,41 +764,59 @@
                 "minLength": 1,
                 "format": "url"
               },
-              "title": { "title": "Title", "type": "string", "minLength": 1 },
+              "title": {
+                "title": "Title",
+                "type": "string",
+                "minLength": 1
+              },
               "type": {
                 "title": "File Format",
                 "description": "The media type of the linked resource.",
                 "type": "string"
               },
-              "rel": { "title": "Relation", "type": "string" }
+              "rel": {
+                "title": "Relation",
+                "type": "string"
+              }
             }
-          }
+          },
+          "startval": []
         }
       },
       "definitions": {
         "keywords": {
           "title": "Keywords",
           "type": "array",
-          "items": { "type": "string", "minLength": 1 },
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
           "uniqueItems": true
         },
         "extent": {
           "title": "Extents",
           "type": "object",
-          "required": ["spatial", "temporal"],
+          "required": [
+            "spatial",
+            "temporal"
+          ],
           "properties": {
             "spatial": {
               "title": "Spatial Extents",
               "type": "object",
               "format": "bounding-boxes",
-              "required": ["bbox"],
+              "required": [
+                "bbox"
+              ],
               "properties": {
                 "bbox": {
                   "type": "array",
                   "items": {
                     "type": "array",
                     "format": "bounding-box",
-                    "items": { "type": "number" },
+                    "items": {
+                      "type": "number"
+                    },
                     "minItems": 4,
                     "maxItems": 4
                   },
@@ -744,14 +828,19 @@
               "title": "Temporal Extents",
               "type": "object",
               "format": "temporal-intervals",
-              "required": ["interval"],
+              "required": [
+                "interval"
+              ],
               "properties": {
                 "interval": {
                   "type": "array",
                   "items": {
                     "type": "array",
                     "format": "temporal-interval",
-                    "items": { "type": "string", "format": "date-time" },
+                    "items": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
                     "minItems": 2,
                     "maxItems": 2
                   },
@@ -761,19 +850,34 @@
             }
           }
         },
-        "osc_name": { "title": "Name", "type": "string", "minLength": 1 },
+        "osc_name": {
+          "title": "Name",
+          "type": "string",
+          "minLength": 1
+        },
         "osc_status": {
           "title": "Status",
           "type": "string",
-          "enum": ["planned", "ongoing", "completed"]
+          "enum": [
+            "planned",
+            "ongoing",
+            "completed"
+          ]
         },
-        "osc_region": { "title": "Region", "type": "string", "minLength": 1 },
+        "osc_region": {
+          "title": "Region",
+          "type": "string",
+          "minLength": 1
+        },
         "osc_missions": {
           "title": "EO Missions",
           "format": "osc-missions",
           "type": "array",
           "uniqueItems": true,
-          "items": { "type": "string", "minLength": 1 }
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
         },
         "osc_themes": {
           "title": "Themes",
@@ -797,37 +901,66 @@
     },
     {
       "type": "object",
-      "required": ["osc:project", "osc:status", "osc:type"],
+      "required": [
+        "osc:project",
+        "osc:status",
+        "osc:type"
+      ],
       "properties": {
         "created": {
           "title": "Creation Date and Time:",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "startval": ""
         },
         "osc:type": {
           "type": "string",
-          "enum": ["product"],
-          "options": { "hidden": true }
+          "enum": [
+            "product"
+          ],
+          "options": {
+            "hidden": true
+          }
         },
-        "osc:name": { "title": "Name", "type": "string", "minLength": 1 },
+        "osc:name": {
+          "title": "Name",
+          "type": "string",
+          "minLength": 1,
+          "startval": ""
+        },
         "osc:status": {
           "title": "Status",
           "type": "string",
-          "enum": ["planned", "ongoing", "completed"]
+          "enum": [
+            "planned",
+            "ongoing",
+            "completed"
+          ],
+          "startval": "planned"
         },
         "osc:project": {
           "title": "Project",
           "type": "string",
           "format": "osc-project",
-          "minLength": 1
+          "minLength": 1,
+          "startval": ""
         },
-        "osc:region": { "title": "Region", "type": "string", "minLength": 1 },
+        "osc:region": {
+          "title": "Region",
+          "type": "string",
+          "minLength": 1,
+          "startval": ""
+        },
         "osc:missions": {
           "title": "EO Missions",
           "format": "osc-missions",
           "type": "array",
           "uniqueItems": true,
-          "items": { "type": "string", "minLength": 1 }
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "startval": []
         },
         "osc:themes": {
           "title": "Themes",
@@ -845,14 +978,19 @@
               "oceans",
               "solid-earth"
             ]
-          }
+          },
+          "startval": []
         },
         "osc:variables": {
           "title": "Variables",
           "format": "osc-variables",
           "type": "array",
           "uniqueItems": true,
-          "items": { "type": "string", "minLength": 1 }
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "startval": []
         },
         "cf:parameter": {
           "type": "array",
@@ -863,12 +1001,25 @@
           "uniqueItems": true,
           "items": {
             "type": "object",
-            "required": ["name"],
+            "required": [
+              "name"
+            ],
             "properties": {
-              "name": { "type": "string", "minLength": 1 },
-              "unit": { "type": "string" }
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "unit": {
+                "type": "string"
+              }
             }
-          }
+          },
+          "startval": [
+            {
+              "name": "",
+              "unit": ""
+            }
+          ]
         },
         "links": {
           "properties": {
@@ -879,33 +1030,65 @@
                     "title": "Other Link",
                     "properties": {
                       "rel": {
-                        "not": { "enum": ["root", "parent", "child", "via"] }
+                        "not": {
+                          "enum": [
+                            "root",
+                            "parent",
+                            "child",
+                            "via"
+                          ]
+                        }
                       }
                     }
                   },
                   {
                     "title": "STAC Root Link",
                     "properties": {
-                      "href": { "readOnly": true },
-                      "title": { "readOnly": true },
-                      "type": {
-                        "enum": ["application/json"],
-                        "options": { "hidden": true }
+                      "href": {
+                        "readOnly": true
                       },
-                      "rel": { "enum": ["root"], "options": { "hidden": true } }
+                      "title": {
+                        "readOnly": true
+                      },
+                      "type": {
+                        "enum": [
+                          "application/json"
+                        ],
+                        "options": {
+                          "hidden": true
+                        }
+                      },
+                      "rel": {
+                        "enum": [
+                          "root"
+                        ],
+                        "options": {
+                          "hidden": true
+                        }
+                      }
                     }
                   },
                   {
                     "title": "STAC Parent Link",
                     "properties": {
-                      "href": { "readOnly": true },
+                      "href": {
+                        "readOnly": true
+                      },
                       "type": {
-                        "enum": ["application/json"],
-                        "options": { "hidden": true }
+                        "enum": [
+                          "application/json"
+                        ],
+                        "options": {
+                          "hidden": true
+                        }
                       },
                       "rel": {
-                        "enum": ["parent"],
-                        "options": { "hidden": true }
+                        "enum": [
+                          "parent"
+                        ],
+                        "options": {
+                          "hidden": true
+                        }
                       }
                     }
                   },
@@ -921,16 +1104,30 @@
                           "text/plain"
                         ],
                         "options": {
-                          "enum_titles": ["JSON", "PDF", "ZIP", "HTML", "Text"]
+                          "enum_titles": [
+                            "JSON",
+                            "PDF",
+                            "ZIP",
+                            "HTML",
+                            "Text"
+                          ]
                         }
                       },
-                      "rel": { "enum": ["via"], "options": { "hidden": true } }
+                      "rel": {
+                        "enum": [
+                          "via"
+                        ],
+                        "options": {
+                          "hidden": true
+                        }
+                      }
                     }
                   }
                 ]
               }
             }
-          }
+          },
+          "startval": []
         }
       },
       "additionalProperties": true
