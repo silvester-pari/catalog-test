@@ -27,7 +27,7 @@
         "rain",
         "temperature"
       ],
-      "default": "temperature"
+      "default": "rain"
     }
   }
 }
