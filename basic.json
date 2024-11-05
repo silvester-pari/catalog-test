@@ -24,7 +24,7 @@
       },
       "initialValue": {
         "vmin": 0,
-        "vmax": 8.81
+        "vmax": 5.4
       }
     },
     "cbar": {
@@ -34,7 +34,7 @@
         "temperature"
       ],
       "default": "temperature",
-      "initialValue": "temperature"
+      "initialValue": "rain"
     }
   }
 }
