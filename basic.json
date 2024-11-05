@@ -16,7 +16,7 @@
           "minimum": 0,
           "maximum": 10,
           "format": "range",
-          "default": 8
+          "default": 2.89
         }
       },
       "format": "minmax"
