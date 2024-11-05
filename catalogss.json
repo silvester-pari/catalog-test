@@ -106,7 +106,14 @@
               }
             }
           },
-          "default": []
+          "default": [
+            {
+              "href": "",
+              "title": "",
+              "type": "",
+              "rel": ""
+            }
+          ]
         }
       },
       "definitions": {
@@ -678,7 +685,14 @@
               }
             ]
           },
-          "default": []
+          "default": [
+            {
+              "href": "",
+              "title": "",
+              "type": "",
+              "rel": ""
+            }
+          ]
         }
       }
     },
