@@ -1,4 +1,4 @@
- ddssdddsSELECT f.animal_id AS animal_id, 
+SELECT f.animal_id AS animal_id, 
        f.animal_type AS animal_type, 
        d.animal_description AS animal_description, 
        f.animal_name AS animal_name, 
