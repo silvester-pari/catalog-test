@@ -1040,7 +1040,9 @@
           },
           "startval": [],
           "initialValue": [],
-          "default": []
+          "default": [
+            "cryosphere"
+          ]
         },
         "osc:variables": {
           "title": "Variables",
