@@ -66,7 +66,7 @@
           "format": "markdown",
           "startval": "",
           "initialValue": "",
-          "default": ""
+          "default": "**cdddd**"
         },
         "keywords": {
           "title": "Keywords",
