@@ -19,7 +19,8 @@
           ],
           "spellChecker": false
         }
-      }
+      },
+      "default": "# Hello there!"
     }
   },
   "preview": "/storytelling.html"
