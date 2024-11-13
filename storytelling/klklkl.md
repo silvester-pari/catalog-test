@@ -1,1 +1,1 @@
-"## Saple"
+## Sample
