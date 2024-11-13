@@ -31,7 +31,10 @@
           "items": {
             "type": "string",
             "format": "url"
-          }
+          },
+          "default": [
+            "onetwo"
+          ]
         },
         "id": {
           "type": "string",
@@ -51,13 +54,15 @@
         "title": {
           "title": "Title",
           "type": "string",
-          "minLength": 1
+          "minLength": 1,
+          "default": "asdfa"
         },
         "description": {
           "title": "Description",
           "type": "string",
           "minLength": 1,
-          "format": "markdown"
+          "format": "markdown",
+          "default": "Description text"
         },
         "keywords": {
           "title": "Keywords",
@@ -66,7 +71,8 @@
             "type": "string",
             "minLength": 1
           },
-          "uniqueItems": true
+          "uniqueItems": true,
+          "default": []
         },
         "license": {
           "title": "License",
@@ -641,7 +647,8 @@
             "ZPL-1.1",
             "ZPL-2.0",
             "ZPL-2.1"
-          ]
+          ],
+          "default": "various"
         },
         "extent": {
           "title": "Extents",
@@ -670,7 +677,15 @@
                     "minItems": 4,
                     "maxItems": 4
                   },
-                  "minItems": 1
+                  "minItems": 1,
+                  "default": [
+                    [
+                      123,
+                      123,
+                      123,
+                      123
+                    ]
+                  ]
                 }
               }
             },
@@ -697,7 +712,13 @@
                     "minItems": 2,
                     "maxItems": 2
                   },
-                  "minItems": 1
+                  "minItems": 1,
+                  "default": [
+                    [
+                      "",
+                      ""
+                    ]
+                  ]
                 }
               }
             }
@@ -790,7 +811,8 @@
                 }
               }
             }
-          }
+          },
+          "default": []
         }
       },
       "definitions": {
@@ -917,7 +939,8 @@
         "created": {
           "title": "Creation Date and Time:",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "default": ""
         },
         "osc:type": {
           "type": "string",
@@ -931,7 +954,8 @@
         "osc:name": {
           "title": "Name",
           "type": "string",
-          "minLength": 1
+          "minLength": 1,
+          "default": "sdf"
         },
         "osc:status": {
           "title": "Status",
@@ -940,18 +964,21 @@
             "planned",
             "ongoing",
             "completed"
-          ]
+          ],
+          "default": "planned"
         },
         "osc:project": {
           "title": "Project",
           "type": "string",
           "format": "osc-project",
-          "minLength": 1
+          "minLength": 1,
+          "default": "sdfs"
         },
         "osc:region": {
           "title": "Region",
           "type": "string",
-          "minLength": 1
+          "minLength": 1,
+          "default": "asfsf"
         },
         "osc:missions": {
           "title": "EO Missions",
@@ -962,7 +989,8 @@
             "type": "string",
             "format": "osc-mission",
             "minLength": 1
-          }
+          },
+          "default": []
         },
         "osc:themes": {
           "title": "Themes",
@@ -973,7 +1001,8 @@
             "type": "string",
             "format": "osc-theme",
             "minLength": 1
-          }
+          },
+          "default": []
         },
         "osc:variables": {
           "title": "Variables",
@@ -983,7 +1012,8 @@
           "items": {
             "type": "string",
             "minLength": 1
-          }
+          },
+          "default": []
         },
         "cf:parameter": {
           "type": "array",
@@ -1006,7 +1036,13 @@
                 "type": "string"
               }
             }
-          }
+          },
+          "default": [
+            {
+              "name": "sdfsd",
+              "unit": ""
+            }
+          ]
         },
         "links": {
           "properties": {
@@ -1155,7 +1191,8 @@
                 ]
               }
             }
-          }
+          },
+          "default": []
         }
       },
       "additionalProperties": true
