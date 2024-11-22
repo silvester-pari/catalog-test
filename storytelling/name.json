@@ -1,0 +1,27 @@
+{
+  "title": "git-clerk",
+  "type": "object",
+  "properties": {
+    "Story": {
+      "type": "string",
+      "format": "markdown",
+      "options": {
+        "simplemde": {
+          "toolbar": [
+            "bold",
+            "italic",
+            "strikethrough",
+            "heading",
+            "|",
+            "unordered-list",
+            "ordered-list",
+            "link"
+          ],
+          "spellChecker": false
+        }
+      },
+      "default": "## sjhhdgsf hjdshj fs p'dsfjhrsfj\n\n\ndsjfhjdshjdk\n\n## Map Example <!--{as=\"eox-map\" style=\"width: 100%; height: 500px;\" layers='[ { \"type\": \"Tile\", \"properties\": { \"id\": \"TOPO-WMS\" }, \"source\": { \"type\": \"TileWMS\", \"url\": \"https://ows.mundialis.de/services/service\", \"params\": { \"LAYERS\": \"TOPO-WMS\" } } } ]' zoom=\"2\" center=[15,48] }-->\n\n## dshfhfdjbv"
+    }
+  },
+  "preview": "/storytelling.html"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "git-clerk",
+  "type": "object",
+  "properties": {
+    "file": {
+      "type": "string",
+      "format": "textarea",
+      "options": {
+        "placeholder": "Enter something"
+      }
+    }
+  }
+}

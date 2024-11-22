@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "Markdown": {
+      "type": "string",
+      "format": "markdown",
+      "options": {
+        "simplemde": {
+          "spellChecker": false
+        }
+      },
+      "default": "ygjyjsdb scd\n\n# ds\n\ndsvscdc\nsdcd![cdscd](https://)"
+    }
+  }
+}

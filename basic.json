@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "vminmax": {
+      "type": "object",
+      "properties": {
+        "vmin": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10,
+          "format": "range",
+          "default": 0
+        },
+        "vmax": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10,
+          "format": "range",
+          "default": 2.89
+        }
+      },
+      "format": "minmax"
+    },
+    "cbar": {
+      "type": "string",
+      "enum": [
+        "rain",
+        "temperature"
+      ],
+      "default": "rain"
+    }
+  }
+}
