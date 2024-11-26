@@ -1,8 +1,8 @@
 {
     "type": "Catalog",
-    "id": "processes",
+    "id": "variables",
     "stac_version": "1.0.0",
-    "description": "Processes for reproducible science",
+    "description": "Geoscience, climate and environmental variables",
     "links": [
       {
         "rel": "root",
@@ -17,5 +17,5 @@
         "title": "Open Science Catalog"
       }
     ],
-    "title": "Processes"
+    "title": "Variables"
   }
