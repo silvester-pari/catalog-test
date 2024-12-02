@@ -1,3 +1,32 @@
 {
-  "id": "sxxsx"
+  "stac_version": "1.0.0",
+  "id": "sxxsx",
+  "type": "Collection",
+  "title": "ss",
+  "description": "",
+  "license": "various",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "",
+          ""
+        ]
+      ]
+    }
+  },
+  "links": [],
+  "osc:type": "product",
+  "osc:status": "planned",
+  "osc:project": ""
 }
