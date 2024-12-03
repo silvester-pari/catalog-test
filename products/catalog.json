@@ -27,6 +27,12 @@
       "href": "./sdsd/collection.json",
       "type": "application/json",
       "title": "dssdsd"
+    },
+    {
+      "rel": "child",
+      "href": "./sdcs/collection.json",
+      "type": "application/json",
+      "title": "cscsscsc"
     }
   ],
   "title": "Products"
