@@ -1,21 +1,27 @@
 {
-    "type": "Catalog",
-    "id": "products",
-    "stac_version": "1.0.0",
-    "description": "Geoscience products representing the measured or inferred values of one or more variables over a given time range and spatial area",
-    "links": [
-      {
-        "rel": "root",
-        "href": "../catalog.json",
-        "type": "application/json",
-        "title": "Open Science Catalog"
-      },
-      {
-        "rel": "parent",
-        "href": "../catalog.json",
-        "type": "application/json",
-        "title": "Open Science Catalog"
-      }
-    ],
-    "title": "Products"
-  }
+  "type": "Catalog",
+  "id": "products",
+  "stac_version": "1.0.0",
+  "description": "Geoscience products representing the measured or inferred values of one or more variables over a given time range and spatial area",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Open Science Catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Open Science Catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./hello/collection.json",
+      "type": "application/json",
+      "title": "hello"
+    }
+  ],
+  "title": "Products"
+}
