@@ -1,4 +1,32 @@
 {
   "id": "ghgh",
-  "title": "hhh"
+  "title": "hhh",
+  "stac_version": "1.0.0",
+  "type": "Collection",
+  "description": "",
+  "license": "various",
+  "extent": {
+    "spatial": {
+      "bbox": {
+        "0": {
+          "0": "",
+          "1": "",
+          "2": "",
+          "3": ""
+        }
+      }
+    },
+    "temporal": {
+      "interval": {
+        "0": {
+          "0": "",
+          "1": ""
+        }
+      }
+    }
+  },
+  "links": {},
+  "osc:type": "product",
+  "osc:status": "planned",
+  "osc:project": ""
 }
