@@ -27,6 +27,12 @@
       "href": "./test/collection.json",
       "type": "application/json",
       "title": "testttt"
+    },
+    {
+      "rel": "child",
+      "href": "./ghgh/collection.json",
+      "type": "application/json",
+      "title": "hhh"
     }
   ],
   "title": "Products"
