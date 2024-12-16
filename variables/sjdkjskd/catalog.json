@@ -1,0 +1,22 @@
+{
+  "stac_version": "1.0.0",
+  "stac_extensions": [],
+  "id": "",
+  "type": "Catalog",
+  "title": "",
+  "description": "",
+  "links": [],
+  "themes": [
+    {
+      "concepts": [
+        {
+          "id": "",
+          "title": "",
+          "description": "",
+          "url": ""
+        }
+      ],
+      "scheme": ""
+    }
+  ]
+}
